@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<html lang="id">
+  <head>
+  	   <meta charset="utf-8">
+        <title>Lookbye</title>
+        <%= csrf_meta_tags %>
+        <%= stylesheet_link_tag    'application' %>
+        <%= javascript_include_tag 'application' %>
+  </head>
+  <body>
+    <!-- Navigation -->
+  <%= render 'content/shared/nav' %>
+<!-- Container-Content -->
+    <main role="main" class="container">
+<div class="clearfix">
+  <div class="mt-3">
+<%= yield %>
+</main>
+</div></body></div></html>
+ <%= render 'content/shared/footers' %>

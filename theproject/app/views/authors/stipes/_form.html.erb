@@ -1,0 +1,79 @@
+<!-- Form -->
+<%= form_for(stipe, url: url,html:{multipart: true}) do |f| %>
+  <% if stipe.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(stipe.errors.count, "error") %> prohibited this stipe from being saved:</h2>
+      <ul>
+      <% stipe.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+  <!-- Field DropZone Js -->
+  <%= f.file_field :image ,span: 'Add Files...' %>
+       <!-- Field Form -->
+<div class="row">
+<div class="col-md-3">
+<div class="card" style="width: 15rem; background-color: darkgray;"> 
+  <div class="card-block">
+    <% if @stipe.new_record? %>
+    <h4 class="card-title">New Artikel</h4>
+    <% else %>
+     <h4 class="card-title">
+       <b>Edit</b>
+       <span class="thin-text"><%= @stipe.title %></span>
+     </h4>
+     <% end %>
+  </div>
+  <ul class="list-group list-group-flush">
+    <li class="list-group-item", style="padding: 10px; border-left:0;border-right:0;">
+    <li class="list-group-item">
+        <div class="field">
+    <%= f.text_area :tag_list, class: 'form-control',value: f.object.tag_list.to_s , placeholder: 'Tag...' %>
+      </div>
+    </li>
+    <li class="list-group-item">
+        <div class="field">
+    <%= f.text_field :title, class: 'form-control', placeholder: 'Title...' %>
+      </div>
+    </li>
+    <li class="list-group-item">
+  <div class="field">
+    <%= f.text_area :description, class: 'form-control', placeholder: 'Description...' %>
+    </div>
+    <li class="list-group-item">
+     <div class="actions">
+    <%= f.submit "Publish", class: 'btn btn-success btn-block' %>
+  </div>
+  </ul>
+  </li>
+</div>
+ <% if @stipe.persisted? %>
+  <%= link_to 'Show', @stipe %> |
+  <% end %>
+  <%= link_to 'Back', authors_stipes_path %>
+</div>
+<div class="col-md-8">
+<div class="field">
+<%= f.text_area :body, name: 'content', id: 'editor' %>
+</div>
+</div>
+</div>
+<script>
+  ClassicEditor
+            .create( document.querySelector( '#editor' ), {
+        toolbar: [ 'headings', 'bold', 'italic', 'link', 'bulletedList', 'numberedList', 'blockQuote', 'insertImage'],
+        heading: {
+            options: [
+                { modelElement: 'paragraph', title: 'Paragraph', class: 'ck-heading_paragraph' },
+                { modelElement: 'heading1', viewElement: 'h1', title: 'Heading 1', class: 'ck-heading_heading1' },
+                { modelElement: 'heading2', viewElement: 'h2', title: 'Heading 2', class: 'ck-heading_heading2' }
+            ]
+        }
+    } )
+    .catch( error => {
+        console.log( error );
+    } );
+</script>
+ <% end %>

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="id">
+<html>
+  <head>
+    <title>Lookbye</title>
+  	   <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+          <meta http-equiv="X-UA-Compatible" content="IE=edge">
+            <%= csrf_meta_tags %>
+              <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+                <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+  <link href="https://fonts.googleapis.com/css?family=Kalam:300,400,700&amp;subset=devanagari,latin-ext" rel="stylesheet">
+</head>
+ <body>
+      <!-- Navigation -->
+      <%= render 'content/shared/nav' %>
+<!-- Container-Content -->
+    <main role="main" class="container">
+<div class="clearfix">
+  <div class="mt-3">
+<%= yield %>
+</main>
+</div></body></div></html>
+ <%= render 'content/shared/footers' %>

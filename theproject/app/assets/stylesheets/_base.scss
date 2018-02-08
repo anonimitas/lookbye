@@ -1,0 +1,225 @@
+html, body .clearfix{
+    zoom: 1;
+    overflow-x: hidden;
+ }
+body{
+	background-color: #e6ecf0 !important;
+	font-family: sans-serif;	
+}
+/* Content Main */
+main{
+    padding-top:125px !important;
+    padding-bottom: 20px !important; 
+    overflow:hidden;
+}
+/* Content Main */
+@media only screen and(max-width: 500px) {
+  main{
+    padding-top: 7.5em !important;
+  }
+}
+/* clearfix content */
+.clearfix:after {
+    visibility: hidden;
+    display: block;
+    font-size: 0;
+    content: " ";
+    clear: both;
+    height: 0;
+}
+.gvtr{
+	height: 30px !important;
+    width: 30px !important;
+    box-shadow: 0 1px 0 rgba(0, 0, 0, 0.3);
+    border: 1px solid #FFCDD2;
+    -moz-border-radius: 6px;
+    -webkit-border-radius: 50%;
+    border-radius: 50%;
+    -webkit-background-clip: padding-box;
+}
+p{
+    list-style: none;
+    font-size: 16px;
+    line-height: 1.5em;
+    color: #333333;
+    font-family: HelveticaNeue-Light, 'Helvetica Neue Light', 'Helvetica Neue', Helvetica, Arial, 'Lucida Grande', sans-serif;
+}
+// Image Cover */
+.card-img-top{
+    width:270px !important;
+    height: 120px !important;
+    padding:0 !important;
+    border-radius: 10px 10px 10px 10px;
+    -moz-border-radius: 10px 10px 10px 10px;
+    -webkit-border-radius: 10px 10px 10px 10px;
+    border: 2px dotted #8f8b8f;
+}
+// Image Cover */
+@media only screen and(max-width: 500px){
+.card-img-top{
+    width:230px !important;
+    height: 115px !important;
+    }
+}
+// Navigation Background */
+.bg-blue{
+  background-color: #1c6fb7 !important;
+}
+// Group Row */
+.row{
+    margin-right: -15px !important;
+    margin-left: -15px !important;
+}
+// Group Row */
+.row:before, .row:after {
+    content: " ";
+    display: table;
+}
+// Footer Bottom */
+._s5vm9 {
+    background-color: #e6ecf0 !important;
+    -webkit-box-ordinal-group: 6;
+    -webkit-order: 5;
+    -ms-flex-order: 5;
+    order: 5;
+    padding: 0 20px;
+}
+// Footer Bottom */
+footer {
+      -webkit-box-align: stretch;
+    -webkit-align-items: stretch;
+    -ms-flex-align: stretch;
+    align-items: stretch;
+    border: 0 solid #000;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-flex-shrink: 0;
+    -ms-flex-negative: 0;
+    flex-shrink: 0;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    width: 100%;
+}
+// Footer Bottom */
+@media only screen and(max-width: 875px){
+._8oc6p, ._9z659{
+    padding: 10px 0;
+    text-align: center
+    }
+}
+// Footer Bottom */
+._8oc6p, ._9z659{
+    text-align: center
+}
+// Footer Bottom */
+._g7lf5 {
+    font-size: 12px;
+    font-weight: 600;
+    margin: 0 auto;
+    text-transform: uppercase;
+    width: 100%;
+}
+// Footer Bottom */
+@media (max-width: 875px){
+._8oc6p ._g8wl6, ._9z659 ._g8wl6, .navgtsn{
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    margin: 0 auto;
+    max-width: 360px;
+    }
+}
+// Footer Bottom */
+._g8wl6{
+    -webkit-box-flex: 1;
+    -webkit-flex-grow: 1;
+    -ms-flex-positive: 1;
+    flex-grow: 1;
+    margin-bottom: 3px;
+}
+// Footer Bottom */
+._538w0 {
+    display: inline-block;
+    margin-bottom: 7px;
+    margin-right: 16px
+}
+// Footer Bottom */
+._1gmap{
+    color:#999;
+}
+// Footer Bottom */
+span{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font: inherit;
+    vertical-align: baseline;
+    text-align: center;
+}
+// Footer Bottom */
+._hqmnd{
+    color:#343a40;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font: inherit;
+    vertical-align: baseline;
+}
+// Footer Bottom */
+._hqmnd:hover{
+    color:gray;
+    text-decoration: none;
+}
+// Footer Bottom */
+ul{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font: inherit;
+    vertical-align: baseline
+}
+// Footer Bottom */
+footer, nav{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font: inherit;
+    vertical-align: baseline;
+}
+// Header Navigation */
+header{
+    position: fixed;
+    top: 0 !important;
+    width: 100% !important;
+    z-index: 1000 !important;
+}
+/* Link Lookbye */
+.gglfnt{
+    font-family: 'Kalam', cursive;
+    font-size: 30px;
+    letter-spacing: 1px;
+}
+.rounded{
+    width: 50%;
+    float: right;
+}
+@media only screen and(max-width: 875px){
+    .rounded{
+        width: 100%;
+    }
+}
+.tooltip_templates{
+    display: none;
+     }

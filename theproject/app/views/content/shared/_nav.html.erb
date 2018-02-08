@@ -1,0 +1,45 @@
+<!-- Navigation Top -->
+<header class="topup">
+  <nav class="navbar navbar-expand-lg navbar-dark bg-blue">
+      <div class="container">
+        <%= link_to "Lookbye", root_path, {class: "nav-link gglfnt",:style =>"color:#fff; font-weight:bold;"} %>
+      <button class="navbar-toggler p-0 border-0" type="button" data-toggle="offcanvas">
+          <span class="navbar-toggler-icon"></span>
+            </button>
+              </div>
+<div class="navbar-collapse offcanvas-collapse" id="navbarsExampleDefault">
+  <ul class="navbar-nav mr-auto">
+    <li class="nav-item active ">
+      <%= link_with_icon(:'home', 'Home', root_path, class: "nav-link") %> 
+        <span class="sr-only">(current)></span>
+          </li>
+<!-- Admin -->
+<% if author_signed_in? %>
+  <%= link_with_icon(:'edit', 'Admin', authors_stipes_path, class: "nav-link") %>
+    <%= link_with_icon(:'user', 'Account', authors_account_path, class: "nav-link") %>
+      <%= link_with_icon(:'times', 'Logout', destroy_author_session_path, method: :delete, class: "nav-link" ) %>
+        <% end %>
+           </ul>
+             </div>
+               </nav> 
+<!-- Jquery function open bar -->
+<script type="text/javascript">
+  $(function () {
+    'use strict'
+  $('[data-toggle="offcanvas"]').on('click', function () {
+  $('.offcanvas-collapse').toggleClass('open')
+  })
+    })
+</script>
+<!-- Button Side Bar -->
+<div class="nav-scroller bg-white box-shadow">
+      <nav class="nav nav-underline">
+        <%= link_to 'Dashboard', root_path, class: 'nav-link active', title: 'Dashboard' %>
+          <%= link_to 'Technologi', '#', class: 'nav-link', title: 'Technologi' %>
+            <%= link_to 'Life', '#', class: 'nav-link nobord', title: 'Life' %>
+              <%= link_to 'Humor', '#', class: 'nav-link nobord', title: 'Humor' %>
+                <%= link_to 'Social', '#', class: 'nav-link nobord', title: 'Social' %>
+                  <%= link_to 'Economi', '#', class: 'nav-link nobord', title: 'Economi' %>
+                    </nav>
+                  </div>
+              </header>

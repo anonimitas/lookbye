@@ -1,0 +1,189 @@
+Started GET "/" for 127.0.0.1 at 2018-02-08 00:06:34 +0700
+  [1m[36mActiveRecord::SchemaMigration Load (1.3ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by Content::StipesController#index as HTML
+  Rendering content/stipes/index.html.erb within layouts/author
+  [1m[36mStipe Load (2.1ms)[0m  [1m[34mSELECT "stipes".* FROM "stipes" ORDER BY created_at DESC[0m
+  [1m[36mActsAsTaggableOn::Tag Load (17.1ms)[0m  [1m[34mSELECT "tags".* FROM "tags" INNER JOIN "taggings" ON "tags"."id" = "taggings"."tag_id" WHERE "taggings"."taggable_id" = $1 AND "taggings"."taggable_type" = $2 AND "taggings"."context" = $3 ORDER BY taggings.id[0m  [["taggable_id", 7], ["taggable_type", "Stipe"], ["context", "tags"]]
+  [1m[36mActsAsTaggableOn::Tag Load (1.4ms)[0m  [1m[34mSELECT "tags".* FROM "tags" INNER JOIN "taggings" ON "tags"."id" = "taggings"."tag_id" WHERE "taggings"."taggable_id" = $1 AND "taggings"."taggable_type" = $2 AND "taggings"."context" = $3 ORDER BY taggings.id[0m  [["taggable_id", 6], ["taggable_type", "Stipe"], ["context", "tags"]]
+  [1m[36mActsAsTaggableOn::Tag Load (1.4ms)[0m  [1m[34mSELECT "tags".* FROM "tags" INNER JOIN "taggings" ON "tags"."id" = "taggings"."tag_id" WHERE "taggings"."taggable_id" = $1 AND "taggings"."taggable_type" = $2 AND "taggings"."context" = $3 ORDER BY taggings.id[0m  [["taggable_id", 5], ["taggable_type", "Stipe"], ["context", "tags"]]
+  [1m[36mActsAsTaggableOn::Tag Load (1.2ms)[0m  [1m[34mSELECT "tags".* FROM "tags" INNER JOIN "taggings" ON "tags"."id" = "taggings"."tag_id" WHERE "taggings"."taggable_id" = $1 AND "taggings"."taggable_type" = $2 AND "taggings"."context" = $3 ORDER BY taggings.id[0m  [["taggable_id", 4], ["taggable_type", "Stipe"], ["context", "tags"]]
+  [1m[36mActsAsTaggableOn::Tag Load (1.9ms)[0m  [1m[34mSELECT "tags".* FROM "tags" INNER JOIN "taggings" ON "tags"."id" = "taggings"."tag_id" WHERE "taggings"."taggable_id" = $1 AND "taggings"."taggable_type" = $2 AND "taggings"."context" = $3 ORDER BY taggings.id[0m  [["taggable_id", 3], ["taggable_type", "Stipe"], ["context", "tags"]]
+  [1m[36mActsAsTaggableOn::Tag Load (1.3ms)[0m  [1m[34mSELECT "tags".* FROM "tags" INNER JOIN "taggings" ON "tags"."id" = "taggings"."tag_id" WHERE "taggings"."taggable_id" = $1 AND "taggings"."taggable_type" = $2 AND "taggings"."context" = $3 ORDER BY taggings.id[0m  [["taggable_id", 2], ["taggable_type", "Stipe"], ["context", "tags"]]
+  [1m[36mActsAsTaggableOn::Tag Load (1.3ms)[0m  [1m[34mSELECT "tags".* FROM "tags" INNER JOIN "taggings" ON "tags"."id" = "taggings"."tag_id" WHERE "taggings"."taggable_id" = $1 AND "taggings"."taggable_type" = $2 AND "taggings"."context" = $3 ORDER BY taggings.id[0m  [["taggable_id", 1], ["taggable_type", "Stipe"], ["context", "tags"]]
+  Rendered content/stipes/index.html.erb within layouts/author (319.8ms)
+  Rendered content/shared/_nav.html.erb (14.9ms)
+  Rendered content/shared/_footers.html.erb (2.2ms)
+Completed 200 OK in 21464ms (Views: 20967.7ms | ActiveRecord: 44.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-02-08 00:07:02 +0700
+Processing by Content::StipesController#index as HTML
+  Rendering content/stipes/index.html.erb within layouts/author
+  [1m[36mStipe Load (1.0ms)[0m  [1m[34mSELECT "stipes".* FROM "stipes" ORDER BY created_at DESC[0m
+  [1m[36mActsAsTaggableOn::Tag Load (1.4ms)[0m  [1m[34mSELECT "tags".* FROM "tags" INNER JOIN "taggings" ON "tags"."id" = "taggings"."tag_id" WHERE "taggings"."taggable_id" = $1 AND "taggings"."taggable_type" = $2 AND "taggings"."context" = $3 ORDER BY taggings.id[0m  [["taggable_id", 7], ["taggable_type", "Stipe"], ["context", "tags"]]
+  [1m[36mActsAsTaggableOn::Tag Load (1.1ms)[0m  [1m[34mSELECT "tags".* FROM "tags" INNER JOIN "taggings" ON "tags"."id" = "taggings"."tag_id" WHERE "taggings"."taggable_id" = $1 AND "taggings"."taggable_type" = $2 AND "taggings"."context" = $3 ORDER BY taggings.id[0m  [["taggable_id", 6], ["taggable_type", "Stipe"], ["context", "tags"]]
+  [1m[36mActsAsTaggableOn::Tag Load (1.7ms)[0m  [1m[34mSELECT "tags".* FROM "tags" INNER JOIN "taggings" ON "tags"."id" = "taggings"."tag_id" WHERE "taggings"."taggable_id" = $1 AND "taggings"."taggable_type" = $2 AND "taggings"."context" = $3 ORDER BY taggings.id[0m  [["taggable_id", 5], ["taggable_type", "Stipe"], ["context", "tags"]]
+  [1m[36mActsAsTaggableOn::Tag Load (1.4ms)[0m  [1m[34mSELECT "tags".* FROM "tags" INNER JOIN "taggings" ON "tags"."id" = "taggings"."tag_id" WHERE "taggings"."taggable_id" = $1 AND "taggings"."taggable_type" = $2 AND "taggings"."context" = $3 ORDER BY taggings.id[0m  [["taggable_id", 4], ["taggable_type", "Stipe"], ["context", "tags"]]
+  [1m[36mActsAsTaggableOn::Tag Load (1.3ms)[0m  [1m[34mSELECT "tags".* FROM "tags" INNER JOIN "taggings" ON "tags"."id" = "taggings"."tag_id" WHERE "taggings"."taggable_id" = $1 AND "taggings"."taggable_type" = $2 AND "taggings"."context" = $3 ORDER BY taggings.id[0m  [["taggable_id", 3], ["taggable_type", "Stipe"], ["context", "tags"]]
+  [1m[36mActsAsTaggableOn::Tag Load (1.3ms)[0m  [1m[34mSELECT "tags".* FROM "tags" INNER JOIN "taggings" ON "tags"."id" = "taggings"."tag_id" WHERE "taggings"."taggable_id" = $1 AND "taggings"."taggable_type" = $2 AND "taggings"."context" = $3 ORDER BY taggings.id[0m  [["taggable_id", 2], ["taggable_type", "Stipe"], ["context", "tags"]]
+  [1m[36mActsAsTaggableOn::Tag Load (2.3ms)[0m  [1m[34mSELECT "tags".* FROM "tags" INNER JOIN "taggings" ON "tags"."id" = "taggings"."tag_id" WHERE "taggings"."taggable_id" = $1 AND "taggings"."taggable_type" = $2 AND "taggings"."context" = $3 ORDER BY taggings.id[0m  [["taggable_id", 1], ["taggable_type", "Stipe"], ["context", "tags"]]
+  Rendered content/stipes/index.html.erb within layouts/author (84.7ms)
+  Rendered content/shared/_nav.html.erb (3.4ms)
+  Rendered content/shared/_footers.html.erb (1.5ms)
+Completed 200 OK in 221ms (Views: 207.0ms | ActiveRecord: 11.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-02-08 00:17:22 +0700
+Processing by Content::StipesController#index as HTML
+  Rendering content/stipes/index.html.erb within layouts/author
+  [1m[36mStipe Load (1.1ms)[0m  [1m[34mSELECT "stipes".* FROM "stipes" ORDER BY created_at DESC[0m
+  [1m[36mActsAsTaggableOn::Tag Load (1.2ms)[0m  [1m[34mSELECT "tags".* FROM "tags" INNER JOIN "taggings" ON "tags"."id" = "taggings"."tag_id" WHERE "taggings"."taggable_id" = $1 AND "taggings"."taggable_type" = $2 AND "taggings"."context" = $3 ORDER BY taggings.id[0m  [["taggable_id", 7], ["taggable_type", "Stipe"], ["context", "tags"]]
+  [1m[36mActsAsTaggableOn::Tag Load (1.5ms)[0m  [1m[34mSELECT "tags".* FROM "tags" INNER JOIN "taggings" ON "tags"."id" = "taggings"."tag_id" WHERE "taggings"."taggable_id" = $1 AND "taggings"."taggable_type" = $2 AND "taggings"."context" = $3 ORDER BY taggings.id[0m  [["taggable_id", 6], ["taggable_type", "Stipe"], ["context", "tags"]]
+  [1m[36mActsAsTaggableOn::Tag Load (1.6ms)[0m  [1m[34mSELECT "tags".* FROM "tags" INNER JOIN "taggings" ON "tags"."id" = "taggings"."tag_id" WHERE "taggings"."taggable_id" = $1 AND "taggings"."taggable_type" = $2 AND "taggings"."context" = $3 ORDER BY taggings.id[0m  [["taggable_id", 5], ["taggable_type", "Stipe"], ["context", "tags"]]
+  [1m[36mActsAsTaggableOn::Tag Load (1.2ms)[0m  [1m[34mSELECT "tags".* FROM "tags" INNER JOIN "taggings" ON "tags"."id" = "taggings"."tag_id" WHERE "taggings"."taggable_id" = $1 AND "taggings"."taggable_type" = $2 AND "taggings"."context" = $3 ORDER BY taggings.id[0m  [["taggable_id", 4], ["taggable_type", "Stipe"], ["context", "tags"]]
+  [1m[36mActsAsTaggableOn::Tag Load (1.1ms)[0m  [1m[34mSELECT "tags".* FROM "tags" INNER JOIN "taggings" ON "tags"."id" = "taggings"."tag_id" WHERE "taggings"."taggable_id" = $1 AND "taggings"."taggable_type" = $2 AND "taggings"."context" = $3 ORDER BY taggings.id[0m  [["taggable_id", 3], ["taggable_type", "Stipe"], ["context", "tags"]]
+  [1m[36mActsAsTaggableOn::Tag Load (2.2ms)[0m  [1m[34mSELECT "tags".* FROM "tags" INNER JOIN "taggings" ON "tags"."id" = "taggings"."tag_id" WHERE "taggings"."taggable_id" = $1 AND "taggings"."taggable_type" = $2 AND "taggings"."context" = $3 ORDER BY taggings.id[0m  [["taggable_id", 2], ["taggable_type", "Stipe"], ["context", "tags"]]
+  [1m[36mActsAsTaggableOn::Tag Load (1.1ms)[0m  [1m[34mSELECT "tags".* FROM "tags" INNER JOIN "taggings" ON "tags"."id" = "taggings"."tag_id" WHERE "taggings"."taggable_id" = $1 AND "taggings"."taggable_type" = $2 AND "taggings"."context" = $3 ORDER BY taggings.id[0m  [["taggable_id", 1], ["taggable_type", "Stipe"], ["context", "tags"]]
+  Rendered content/stipes/index.html.erb within layouts/author (73.6ms)
+  Rendered content/shared/_nav.html.erb (3.2ms)
+  Rendered content/shared/_footers.html.erb (1.6ms)
+Completed 200 OK in 390ms (Views: 363.1ms | ActiveRecord: 10.9ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-02-08 00:18:02 +0700
+  [1m[36mActiveRecord::SchemaMigration Load (0.9ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by Content::StipesController#index as HTML
+  Rendering content/stipes/index.html.erb within layouts/author
+  [1m[36mStipe Load (1.8ms)[0m  [1m[34mSELECT "stipes".* FROM "stipes" ORDER BY created_at DESC[0m
+  [1m[36mActsAsTaggableOn::Tag Load (3.8ms)[0m  [1m[34mSELECT "tags".* FROM "tags" INNER JOIN "taggings" ON "tags"."id" = "taggings"."tag_id" WHERE "taggings"."taggable_id" = $1 AND "taggings"."taggable_type" = $2 AND "taggings"."context" = $3 ORDER BY taggings.id[0m  [["taggable_id", 7], ["taggable_type", "Stipe"], ["context", "tags"]]
+  [1m[36mActsAsTaggableOn::Tag Load (1.4ms)[0m  [1m[34mSELECT "tags".* FROM "tags" INNER JOIN "taggings" ON "tags"."id" = "taggings"."tag_id" WHERE "taggings"."taggable_id" = $1 AND "taggings"."taggable_type" = $2 AND "taggings"."context" = $3 ORDER BY taggings.id[0m  [["taggable_id", 6], ["taggable_type", "Stipe"], ["context", "tags"]]
+  [1m[36mActsAsTaggableOn::Tag Load (1.4ms)[0m  [1m[34mSELECT "tags".* FROM "tags" INNER JOIN "taggings" ON "tags"."id" = "taggings"."tag_id" WHERE "taggings"."taggable_id" = $1 AND "taggings"."taggable_type" = $2 AND "taggings"."context" = $3 ORDER BY taggings.id[0m  [["taggable_id", 5], ["taggable_type", "Stipe"], ["context", "tags"]]
+  [1m[36mActsAsTaggableOn::Tag Load (1.4ms)[0m  [1m[34mSELECT "tags".* FROM "tags" INNER JOIN "taggings" ON "tags"."id" = "taggings"."tag_id" WHERE "taggings"."taggable_id" = $1 AND "taggings"."taggable_type" = $2 AND "taggings"."context" = $3 ORDER BY taggings.id[0m  [["taggable_id", 4], ["taggable_type", "Stipe"], ["context", "tags"]]
+  [1m[36mActsAsTaggableOn::Tag Load (1.5ms)[0m  [1m[34mSELECT "tags".* FROM "tags" INNER JOIN "taggings" ON "tags"."id" = "taggings"."tag_id" WHERE "taggings"."taggable_id" = $1 AND "taggings"."taggable_type" = $2 AND "taggings"."context" = $3 ORDER BY taggings.id[0m  [["taggable_id", 3], ["taggable_type", "Stipe"], ["context", "tags"]]
+  [1m[36mActsAsTaggableOn::Tag Load (1.1ms)[0m  [1m[34mSELECT "tags".* FROM "tags" INNER JOIN "taggings" ON "tags"."id" = "taggings"."tag_id" WHERE "taggings"."taggable_id" = $1 AND "taggings"."taggable_type" = $2 AND "taggings"."context" = $3 ORDER BY taggings.id[0m  [["taggable_id", 2], ["taggable_type", "Stipe"], ["context", "tags"]]
+  [1m[36mActsAsTaggableOn::Tag Load (1.3ms)[0m  [1m[34mSELECT "tags".* FROM "tags" INNER JOIN "taggings" ON "tags"."id" = "taggings"."tag_id" WHERE "taggings"."taggable_id" = $1 AND "taggings"."taggable_type" = $2 AND "taggings"."context" = $3 ORDER BY taggings.id[0m  [["taggable_id", 1], ["taggable_type", "Stipe"], ["context", "tags"]]
+  Rendered content/stipes/index.html.erb within layouts/author (274.5ms)
+  Rendered content/shared/_nav.html.erb (18.1ms)
+  Rendered content/shared/_footers.html.erb (1.3ms)
+Completed 200 OK in 2245ms (Views: 1963.4ms | ActiveRecord: 28.9ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-02-08 00:18:24 +0700
+Processing by Content::StipesController#index as HTML
+  Rendering content/stipes/index.html.erb within layouts/author
+  [1m[36mStipe Load (1.1ms)[0m  [1m[34mSELECT "stipes".* FROM "stipes" ORDER BY created_at DESC[0m
+  [1m[36mActsAsTaggableOn::Tag Load (1.1ms)[0m  [1m[34mSELECT "tags".* FROM "tags" INNER JOIN "taggings" ON "tags"."id" = "taggings"."tag_id" WHERE "taggings"."taggable_id" = $1 AND "taggings"."taggable_type" = $2 AND "taggings"."context" = $3 ORDER BY taggings.id[0m  [["taggable_id", 7], ["taggable_type", "Stipe"], ["context", "tags"]]
+  [1m[36mActsAsTaggableOn::Tag Load (1.1ms)[0m  [1m[34mSELECT "tags".* FROM "tags" INNER JOIN "taggings" ON "tags"."id" = "taggings"."tag_id" WHERE "taggings"."taggable_id" = $1 AND "taggings"."taggable_type" = $2 AND "taggings"."context" = $3 ORDER BY taggings.id[0m  [["taggable_id", 6], ["taggable_type", "Stipe"], ["context", "tags"]]
+  [1m[36mActsAsTaggableOn::Tag Load (1.2ms)[0m  [1m[34mSELECT "tags".* FROM "tags" INNER JOIN "taggings" ON "tags"."id" = "taggings"."tag_id" WHERE "taggings"."taggable_id" = $1 AND "taggings"."taggable_type" = $2 AND "taggings"."context" = $3 ORDER BY taggings.id[0m  [["taggable_id", 5], ["taggable_type", "Stipe"], ["context", "tags"]]
+  [1m[36mActsAsTaggableOn::Tag Load (1.0ms)[0m  [1m[34mSELECT "tags".* FROM "tags" INNER JOIN "taggings" ON "tags"."id" = "taggings"."tag_id" WHERE "taggings"."taggable_id" = $1 AND "taggings"."taggable_type" = $2 AND "taggings"."context" = $3 ORDER BY taggings.id[0m  [["taggable_id", 4], ["taggable_type", "Stipe"], ["context", "tags"]]
+  [1m[36mActsAsTaggableOn::Tag Load (1.4ms)[0m  [1m[34mSELECT "tags".* FROM "tags" INNER JOIN "taggings" ON "tags"."id" = "taggings"."tag_id" WHERE "taggings"."taggable_id" = $1 AND "taggings"."taggable_type" = $2 AND "taggings"."context" = $3 ORDER BY taggings.id[0m  [["taggable_id", 3], ["taggable_type", "Stipe"], ["context", "tags"]]
+  [1m[36mActsAsTaggableOn::Tag Load (1.0ms)[0m  [1m[34mSELECT "tags".* FROM "tags" INNER JOIN "taggings" ON "tags"."id" = "taggings"."tag_id" WHERE "taggings"."taggable_id" = $1 AND "taggings"."taggable_type" = $2 AND "taggings"."context" = $3 ORDER BY taggings.id[0m  [["taggable_id", 2], ["taggable_type", "Stipe"], ["context", "tags"]]
+  [1m[36mActsAsTaggableOn::Tag Load (2.8ms)[0m  [1m[34mSELECT "tags".* FROM "tags" INNER JOIN "taggings" ON "tags"."id" = "taggings"."tag_id" WHERE "taggings"."taggable_id" = $1 AND "taggings"."taggable_type" = $2 AND "taggings"."context" = $3 ORDER BY taggings.id[0m  [["taggable_id", 1], ["taggable_type", "Stipe"], ["context", "tags"]]
+  Rendered content/stipes/index.html.erb within layouts/author (75.5ms)
+  Rendered content/shared/_nav.html.erb (4.4ms)
+  Rendered content/shared/_footers.html.erb (2.9ms)
+Completed 200 OK in 13344ms (Views: 13330.4ms | ActiveRecord: 10.9ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-02-08 00:22:45 +0700
+Processing by Content::StipesController#index as HTML
+  Rendering content/stipes/index.html.erb within layouts/author
+  [1m[36mStipe Load (0.9ms)[0m  [1m[34mSELECT "stipes".* FROM "stipes" ORDER BY created_at DESC[0m
+  [1m[36mActsAsTaggableOn::Tag Load (3.7ms)[0m  [1m[34mSELECT "tags".* FROM "tags" INNER JOIN "taggings" ON "tags"."id" = "taggings"."tag_id" WHERE "taggings"."taggable_id" = $1 AND "taggings"."taggable_type" = $2 AND "taggings"."context" = $3 ORDER BY taggings.id[0m  [["taggable_id", 7], ["taggable_type", "Stipe"], ["context", "tags"]]
+  [1m[36mActsAsTaggableOn::Tag Load (1.2ms)[0m  [1m[34mSELECT "tags".* FROM "tags" INNER JOIN "taggings" ON "tags"."id" = "taggings"."tag_id" WHERE "taggings"."taggable_id" = $1 AND "taggings"."taggable_type" = $2 AND "taggings"."context" = $3 ORDER BY taggings.id[0m  [["taggable_id", 6], ["taggable_type", "Stipe"], ["context", "tags"]]
+  [1m[36mActsAsTaggableOn::Tag Load (1.1ms)[0m  [1m[34mSELECT "tags".* FROM "tags" INNER JOIN "taggings" ON "tags"."id" = "taggings"."tag_id" WHERE "taggings"."taggable_id" = $1 AND "taggings"."taggable_type" = $2 AND "taggings"."context" = $3 ORDER BY taggings.id[0m  [["taggable_id", 5], ["taggable_type", "Stipe"], ["context", "tags"]]
+  [1m[36mActsAsTaggableOn::Tag Load (1.2ms)[0m  [1m[34mSELECT "tags".* FROM "tags" INNER JOIN "taggings" ON "tags"."id" = "taggings"."tag_id" WHERE "taggings"."taggable_id" = $1 AND "taggings"."taggable_type" = $2 AND "taggings"."context" = $3 ORDER BY taggings.id[0m  [["taggable_id", 4], ["taggable_type", "Stipe"], ["context", "tags"]]
+  [1m[36mActsAsTaggableOn::Tag Load (1.1ms)[0m  [1m[34mSELECT "tags".* FROM "tags" INNER JOIN "taggings" ON "tags"."id" = "taggings"."tag_id" WHERE "taggings"."taggable_id" = $1 AND "taggings"."taggable_type" = $2 AND "taggings"."context" = $3 ORDER BY taggings.id[0m  [["taggable_id", 3], ["taggable_type", "Stipe"], ["context", "tags"]]
+  [1m[36mActsAsTaggableOn::Tag Load (1.2ms)[0m  [1m[34mSELECT "tags".* FROM "tags" INNER JOIN "taggings" ON "tags"."id" = "taggings"."tag_id" WHERE "taggings"."taggable_id" = $1 AND "taggings"."taggable_type" = $2 AND "taggings"."context" = $3 ORDER BY taggings.id[0m  [["taggable_id", 2], ["taggable_type", "Stipe"], ["context", "tags"]]
+  [1m[36mActsAsTaggableOn::Tag Load (1.3ms)[0m  [1m[34mSELECT "tags".* FROM "tags" INNER JOIN "taggings" ON "tags"."id" = "taggings"."tag_id" WHERE "taggings"."taggable_id" = $1 AND "taggings"."taggable_type" = $2 AND "taggings"."context" = $3 ORDER BY taggings.id[0m  [["taggable_id", 1], ["taggable_type", "Stipe"], ["context", "tags"]]
+  Rendered content/stipes/index.html.erb within layouts/author (97.6ms)
+  Rendered content/shared/_nav.html.erb (3.5ms)
+  Rendered content/shared/_footers.html.erb (1.8ms)
+Completed 200 OK in 9719ms (Views: 9704.7ms | ActiveRecord: 11.8ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-02-08 00:22:59 +0700
+Processing by Content::StipesController#index as HTML
+  Rendering content/stipes/index.html.erb within layouts/author
+  [1m[36mStipe Load (1.7ms)[0m  [1m[34mSELECT "stipes".* FROM "stipes" ORDER BY created_at DESC[0m
+  [1m[36mActsAsTaggableOn::Tag Load (1.2ms)[0m  [1m[34mSELECT "tags".* FROM "tags" INNER JOIN "taggings" ON "tags"."id" = "taggings"."tag_id" WHERE "taggings"."taggable_id" = $1 AND "taggings"."taggable_type" = $2 AND "taggings"."context" = $3 ORDER BY taggings.id[0m  [["taggable_id", 7], ["taggable_type", "Stipe"], ["context", "tags"]]
+  [1m[36mActsAsTaggableOn::Tag Load (7.8ms)[0m  [1m[34mSELECT "tags".* FROM "tags" INNER JOIN "taggings" ON "tags"."id" = "taggings"."tag_id" WHERE "taggings"."taggable_id" = $1 AND "taggings"."taggable_type" = $2 AND "taggings"."context" = $3 ORDER BY taggings.id[0m  [["taggable_id", 6], ["taggable_type", "Stipe"], ["context", "tags"]]
+  [1m[36mActsAsTaggableOn::Tag Load (3.8ms)[0m  [1m[34mSELECT "tags".* FROM "tags" INNER JOIN "taggings" ON "tags"."id" = "taggings"."tag_id" WHERE "taggings"."taggable_id" = $1 AND "taggings"."taggable_type" = $2 AND "taggings"."context" = $3 ORDER BY taggings.id[0m  [["taggable_id", 5], ["taggable_type", "Stipe"], ["context", "tags"]]
+  [1m[36mActsAsTaggableOn::Tag Load (6.0ms)[0m  [1m[34mSELECT "tags".* FROM "tags" INNER JOIN "taggings" ON "tags"."id" = "taggings"."tag_id" WHERE "taggings"."taggable_id" = $1 AND "taggings"."taggable_type" = $2 AND "taggings"."context" = $3 ORDER BY taggings.id[0m  [["taggable_id", 4], ["taggable_type", "Stipe"], ["context", "tags"]]
+  [1m[36mActsAsTaggableOn::Tag Load (1.3ms)[0m  [1m[34mSELECT "tags".* FROM "tags" INNER JOIN "taggings" ON "tags"."id" = "taggings"."tag_id" WHERE "taggings"."taggable_id" = $1 AND "taggings"."taggable_type" = $2 AND "taggings"."context" = $3 ORDER BY taggings.id[0m  [["taggable_id", 3], ["taggable_type", "Stipe"], ["context", "tags"]]
+  [1m[36mActsAsTaggableOn::Tag Load (1.0ms)[0m  [1m[34mSELECT "tags".* FROM "tags" INNER JOIN "taggings" ON "tags"."id" = "taggings"."tag_id" WHERE "taggings"."taggable_id" = $1 AND "taggings"."taggable_type" = $2 AND "taggings"."context" = $3 ORDER BY taggings.id[0m  [["taggable_id", 2], ["taggable_type", "Stipe"], ["context", "tags"]]
+Started GET "/" for 127.0.0.1 at 2018-02-08 00:22:59 +0700
+  [1m[36mActsAsTaggableOn::Tag Load (1.7ms)[0m  [1m[34mSELECT "tags".* FROM "tags" INNER JOIN "taggings" ON "tags"."id" = "taggings"."tag_id" WHERE "taggings"."taggable_id" = $1 AND "taggings"."taggable_type" = $2 AND "taggings"."context" = $3 ORDER BY taggings.id[0m  [["taggable_id", 1], ["taggable_type", "Stipe"], ["context", "tags"]]
+  Rendered content/stipes/index.html.erb within layouts/author (120.5ms)
+Processing by Content::StipesController#index as HTML
+  Rendering content/stipes/index.html.erb within layouts/author
+  [1m[36mStipe Load (1.0ms)[0m  [1m[34mSELECT "stipes".* FROM "stipes" ORDER BY created_at DESC[0m
+  [1m[36mActsAsTaggableOn::Tag Load (6.4ms)[0m  [1m[34mSELECT "tags".* FROM "tags" INNER JOIN "taggings" ON "tags"."id" = "taggings"."tag_id" WHERE "taggings"."taggable_id" = $1 AND "taggings"."taggable_type" = $2 AND "taggings"."context" = $3 ORDER BY taggings.id[0m  [["taggable_id", 7], ["taggable_type", "Stipe"], ["context", "tags"]]
+  [1m[36mActsAsTaggableOn::Tag Load (2.8ms)[0m  [1m[34mSELECT "tags".* FROM "tags" INNER JOIN "taggings" ON "tags"."id" = "taggings"."tag_id" WHERE "taggings"."taggable_id" = $1 AND "taggings"."taggable_type" = $2 AND "taggings"."context" = $3 ORDER BY taggings.id[0m  [["taggable_id", 6], ["taggable_type", "Stipe"], ["context", "tags"]]
+  [1m[36mActsAsTaggableOn::Tag Load (1.5ms)[0m  [1m[34mSELECT "tags".* FROM "tags" INNER JOIN "taggings" ON "tags"."id" = "taggings"."tag_id" WHERE "taggings"."taggable_id" = $1 AND "taggings"."taggable_type" = $2 AND "taggings"."context" = $3 ORDER BY taggings.id[0m  [["taggable_id", 5], ["taggable_type", "Stipe"], ["context", "tags"]]
+  [1m[36mActsAsTaggableOn::Tag Load (1.1ms)[0m  [1m[34mSELECT "tags".* FROM "tags" INNER JOIN "taggings" ON "tags"."id" = "taggings"."tag_id" WHERE "taggings"."taggable_id" = $1 AND "taggings"."taggable_type" = $2 AND "taggings"."context" = $3 ORDER BY taggings.id[0m  [["taggable_id", 4], ["taggable_type", "Stipe"], ["context", "tags"]]
+  [1m[36mActsAsTaggableOn::Tag Load (6.2ms)[0m  [1m[34mSELECT "tags".* FROM "tags" INNER JOIN "taggings" ON "tags"."id" = "taggings"."tag_id" WHERE "taggings"."taggable_id" = $1 AND "taggings"."taggable_type" = $2 AND "taggings"."context" = $3 ORDER BY taggings.id[0m  [["taggable_id", 3], ["taggable_type", "Stipe"], ["context", "tags"]]
+  [1m[36mActsAsTaggableOn::Tag Load (1.1ms)[0m  [1m[34mSELECT "tags".* FROM "tags" INNER JOIN "taggings" ON "tags"."id" = "taggings"."tag_id" WHERE "taggings"."taggable_id" = $1 AND "taggings"."taggable_type" = $2 AND "taggings"."context" = $3 ORDER BY taggings.id[0m  [["taggable_id", 2], ["taggable_type", "Stipe"], ["context", "tags"]]
+  [1m[36mActsAsTaggableOn::Tag Load (1.2ms)[0m  [1m[34mSELECT "tags".* FROM "tags" INNER JOIN "taggings" ON "tags"."id" = "taggings"."tag_id" WHERE "taggings"."taggable_id" = $1 AND "taggings"."taggable_type" = $2 AND "taggings"."context" = $3 ORDER BY taggings.id[0m  [["taggable_id", 1], ["taggable_type", "Stipe"], ["context", "tags"]]
+  Rendered content/stipes/index.html.erb within layouts/author (103.1ms)
+  Rendered content/shared/_nav.html.erb (4.7ms)
+  Rendered content/shared/_footers.html.erb (1.3ms)
+Completed 200 OK in 331ms (Views: 304.1ms | ActiveRecord: 24.5ms)
+
+
+  Rendered content/shared/_nav.html.erb (2.7ms)
+  Rendered content/shared/_footers.html.erb (1.1ms)
+Completed 200 OK in 304ms (Views: 280.7ms | ActiveRecord: 21.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-02-08 00:23:01 +0700
+Processing by Content::StipesController#index as HTML
+  Rendering content/stipes/index.html.erb within layouts/author
+  [1m[36mStipe Load (0.9ms)[0m  [1m[34mSELECT "stipes".* FROM "stipes" ORDER BY created_at DESC[0m
+  [1m[36mActsAsTaggableOn::Tag Load (1.3ms)[0m  [1m[34mSELECT "tags".* FROM "tags" INNER JOIN "taggings" ON "tags"."id" = "taggings"."tag_id" WHERE "taggings"."taggable_id" = $1 AND "taggings"."taggable_type" = $2 AND "taggings"."context" = $3 ORDER BY taggings.id[0m  [["taggable_id", 7], ["taggable_type", "Stipe"], ["context", "tags"]]
+  [1m[36mActsAsTaggableOn::Tag Load (1.3ms)[0m  [1m[34mSELECT "tags".* FROM "tags" INNER JOIN "taggings" ON "tags"."id" = "taggings"."tag_id" WHERE "taggings"."taggable_id" = $1 AND "taggings"."taggable_type" = $2 AND "taggings"."context" = $3 ORDER BY taggings.id[0m  [["taggable_id", 6], ["taggable_type", "Stipe"], ["context", "tags"]]
+  [1m[36mActsAsTaggableOn::Tag Load (3.2ms)[0m  [1m[34mSELECT "tags".* FROM "tags" INNER JOIN "taggings" ON "tags"."id" = "taggings"."tag_id" WHERE "taggings"."taggable_id" = $1 AND "taggings"."taggable_type" = $2 AND "taggings"."context" = $3 ORDER BY taggings.id[0m  [["taggable_id", 5], ["taggable_type", "Stipe"], ["context", "tags"]]
+  [1m[36mActsAsTaggableOn::Tag Load (6.2ms)[0m  [1m[34mSELECT "tags".* FROM "tags" INNER JOIN "taggings" ON "tags"."id" = "taggings"."tag_id" WHERE "taggings"."taggable_id" = $1 AND "taggings"."taggable_type" = $2 AND "taggings"."context" = $3 ORDER BY taggings.id[0m  [["taggable_id", 4], ["taggable_type", "Stipe"], ["context", "tags"]]
+  [1m[36mActsAsTaggableOn::Tag Load (1.3ms)[0m  [1m[34mSELECT "tags".* FROM "tags" INNER JOIN "taggings" ON "tags"."id" = "taggings"."tag_id" WHERE "taggings"."taggable_id" = $1 AND "taggings"."taggable_type" = $2 AND "taggings"."context" = $3 ORDER BY taggings.id[0m  [["taggable_id", 3], ["taggable_type", "Stipe"], ["context", "tags"]]
+  [1m[36mActsAsTaggableOn::Tag Load (1.5ms)[0m  [1m[34mSELECT "tags".* FROM "tags" INNER JOIN "taggings" ON "tags"."id" = "taggings"."tag_id" WHERE "taggings"."taggable_id" = $1 AND "taggings"."taggable_type" = $2 AND "taggings"."context" = $3 ORDER BY taggings.id[0m  [["taggable_id", 2], ["taggable_type", "Stipe"], ["context", "tags"]]
+  [1m[36mActsAsTaggableOn::Tag Load (1.5ms)[0m  [1m[34mSELECT "tags".* FROM "tags" INNER JOIN "taggings" ON "tags"."id" = "taggings"."tag_id" WHERE "taggings"."taggable_id" = $1 AND "taggings"."taggable_type" = $2 AND "taggings"."context" = $3 ORDER BY taggings.id[0m  [["taggable_id", 1], ["taggable_type", "Stipe"], ["context", "tags"]]
+  Rendered content/stipes/index.html.erb within layouts/author (93.3ms)
+  Rendered content/shared/_nav.html.erb (3.7ms)
+  Rendered content/shared/_footers.html.erb (1.5ms)
+Completed 200 OK in 247ms (Views: 226.7ms | ActiveRecord: 17.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-02-08 00:23:02 +0700
+Processing by Content::StipesController#index as HTML
+  Rendering content/stipes/index.html.erb within layouts/author
+  [1m[36mStipe Load (1.3ms)[0m  [1m[34mSELECT "stipes".* FROM "stipes" ORDER BY created_at DESC[0m
+  [1m[36mActsAsTaggableOn::Tag Load (1.8ms)[0m  [1m[34mSELECT "tags".* FROM "tags" INNER JOIN "taggings" ON "tags"."id" = "taggings"."tag_id" WHERE "taggings"."taggable_id" = $1 AND "taggings"."taggable_type" = $2 AND "taggings"."context" = $3 ORDER BY taggings.id[0m  [["taggable_id", 7], ["taggable_type", "Stipe"], ["context", "tags"]]
+  [1m[36mActsAsTaggableOn::Tag Load (1.4ms)[0m  [1m[34mSELECT "tags".* FROM "tags" INNER JOIN "taggings" ON "tags"."id" = "taggings"."tag_id" WHERE "taggings"."taggable_id" = $1 AND "taggings"."taggable_type" = $2 AND "taggings"."context" = $3 ORDER BY taggings.id[0m  [["taggable_id", 6], ["taggable_type", "Stipe"], ["context", "tags"]]
+  [1m[36mActsAsTaggableOn::Tag Load (1.9ms)[0m  [1m[34mSELECT "tags".* FROM "tags" INNER JOIN "taggings" ON "tags"."id" = "taggings"."tag_id" WHERE "taggings"."taggable_id" = $1 AND "taggings"."taggable_type" = $2 AND "taggings"."context" = $3 ORDER BY taggings.id[0m  [["taggable_id", 5], ["taggable_type", "Stipe"], ["context", "tags"]]
+  [1m[36mActsAsTaggableOn::Tag Load (1.3ms)[0m  [1m[34mSELECT "tags".* FROM "tags" INNER JOIN "taggings" ON "tags"."id" = "taggings"."tag_id" WHERE "taggings"."taggable_id" = $1 AND "taggings"."taggable_type" = $2 AND "taggings"."context" = $3 ORDER BY taggings.id[0m  [["taggable_id", 4], ["taggable_type", "Stipe"], ["context", "tags"]]
+  [1m[36mActsAsTaggableOn::Tag Load (1.3ms)[0m  [1m[34mSELECT "tags".* FROM "tags" INNER JOIN "taggings" ON "tags"."id" = "taggings"."tag_id" WHERE "taggings"."taggable_id" = $1 AND "taggings"."taggable_type" = $2 AND "taggings"."context" = $3 ORDER BY taggings.id[0m  [["taggable_id", 3], ["taggable_type", "Stipe"], ["context", "tags"]]
+  [1m[36mActsAsTaggableOn::Tag Load (1.5ms)[0m  [1m[34mSELECT "tags".* FROM "tags" INNER JOIN "taggings" ON "tags"."id" = "taggings"."tag_id" WHERE "taggings"."taggable_id" = $1 AND "taggings"."taggable_type" = $2 AND "taggings"."context" = $3 ORDER BY taggings.id[0m  [["taggable_id", 2], ["taggable_type", "Stipe"], ["context", "tags"]]
+  [1m[36mActsAsTaggableOn::Tag Load (1.2ms)[0m  [1m[34mSELECT "tags".* FROM "tags" INNER JOIN "taggings" ON "tags"."id" = "taggings"."tag_id" WHERE "taggings"."taggable_id" = $1 AND "taggings"."taggable_type" = $2 AND "taggings"."context" = $3 ORDER BY taggings.id[0m  [["taggable_id", 1], ["taggable_type", "Stipe"], ["context", "tags"]]
+  Rendered content/stipes/index.html.erb within layouts/author (93.4ms)
+  Rendered content/shared/_nav.html.erb (3.6ms)
+  Rendered content/shared/_footers.html.erb (1.6ms)
+Completed 200 OK in 285ms (Views: 271.4ms | ActiveRecord: 11.6ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-02-08 00:28:16 +0700
+Processing by Content::StipesController#index as HTML
+  Rendering content/stipes/index.html.erb within layouts/author
+  [1m[36mStipe Load (1.5ms)[0m  [1m[34mSELECT "stipes".* FROM "stipes" ORDER BY created_at DESC[0m
+  [1m[36mActsAsTaggableOn::Tag Load (1.4ms)[0m  [1m[34mSELECT "tags".* FROM "tags" INNER JOIN "taggings" ON "tags"."id" = "taggings"."tag_id" WHERE "taggings"."taggable_id" = $1 AND "taggings"."taggable_type" = $2 AND "taggings"."context" = $3 ORDER BY taggings.id[0m  [["taggable_id", 7], ["taggable_type", "Stipe"], ["context", "tags"]]
+  [1m[36mActsAsTaggableOn::Tag Load (1.4ms)[0m  [1m[34mSELECT "tags".* FROM "tags" INNER JOIN "taggings" ON "tags"."id" = "taggings"."tag_id" WHERE "taggings"."taggable_id" = $1 AND "taggings"."taggable_type" = $2 AND "taggings"."context" = $3 ORDER BY taggings.id[0m  [["taggable_id", 6], ["taggable_type", "Stipe"], ["context", "tags"]]
+  [1m[36mActsAsTaggableOn::Tag Load (4.4ms)[0m  [1m[34mSELECT "tags".* FROM "tags" INNER JOIN "taggings" ON "tags"."id" = "taggings"."tag_id" WHERE "taggings"."taggable_id" = $1 AND "taggings"."taggable_type" = $2 AND "taggings"."context" = $3 ORDER BY taggings.id[0m  [["taggable_id", 5], ["taggable_type", "Stipe"], ["context", "tags"]]
+  [1m[36mActsAsTaggableOn::Tag Load (1.5ms)[0m  [1m[34mSELECT "tags".* FROM "tags" INNER JOIN "taggings" ON "tags"."id" = "taggings"."tag_id" WHERE "taggings"."taggable_id" = $1 AND "taggings"."taggable_type" = $2 AND "taggings"."context" = $3 ORDER BY taggings.id[0m  [["taggable_id", 4], ["taggable_type", "Stipe"], ["context", "tags"]]
+  [1m[36mActsAsTaggableOn::Tag Load (1.8ms)[0m  [1m[34mSELECT "tags".* FROM "tags" INNER JOIN "taggings" ON "tags"."id" = "taggings"."tag_id" WHERE "taggings"."taggable_id" = $1 AND "taggings"."taggable_type" = $2 AND "taggings"."context" = $3 ORDER BY taggings.id[0m  [["taggable_id", 3], ["taggable_type", "Stipe"], ["context", "tags"]]
+  [1m[36mActsAsTaggableOn::Tag Load (1.5ms)[0m  [1m[34mSELECT "tags".* FROM "tags" INNER JOIN "taggings" ON "tags"."id" = "taggings"."tag_id" WHERE "taggings"."taggable_id" = $1 AND "taggings"."taggable_type" = $2 AND "taggings"."context" = $3 ORDER BY taggings.id[0m  [["taggable_id", 2], ["taggable_type", "Stipe"], ["context", "tags"]]
+  [1m[36mActsAsTaggableOn::Tag Load (5.0ms)[0m  [1m[34mSELECT "tags".* FROM "tags" INNER JOIN "taggings" ON "tags"."id" = "taggings"."tag_id" WHERE "taggings"."taggable_id" = $1 AND "taggings"."taggable_type" = $2 AND "taggings"."context" = $3 ORDER BY taggings.id[0m  [["taggable_id", 1], ["taggable_type", "Stipe"], ["context", "tags"]]
+  Rendered content/stipes/index.html.erb within layouts/author (120.3ms)
+  Rendered content/shared/_nav.html.erb (3.0ms)
+  Rendered content/shared/_footers.html.erb (1.4ms)
+Completed 200 OK in 350ms (Views: 325.6ms | ActiveRecord: 18.5ms)
+
+

@@ -1,0 +1,10 @@
+ <!-- Container Showing -->
+<div class="row">
+  <div class="card">
+  <div class="card-body card-boxshow">
+    <h3 class="card-title"><%= @stipe.title.html_safe %></h3>
+    <p class="card-text"><%= @stipe.body.html_safe %></p>
+  </div>
+</div>
+</div>
+<%= link_to 'Edit', edit_authors_stipe_path(@stipe) %>
